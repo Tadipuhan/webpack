@@ -1,18 +1,17 @@
 
-module.exports = class Calculator {
+export class CalculatorService {
     constructor() {
-        const operand1 = document.querySelector('#operand1');
-        const operand2 = document.querySelector('#operand2');
-        const tombolTambah = document.querySelector('#tombol-tambah');
-        const hasil = document.querySelector('#hasil');
-        const error = document.querySelector('#error');
+        this.operand1 = document.querySelector('#operand1');
+        this.operand2 = document.querySelector('#operand2');
+        this.tombolTambah = document.querySelector('#tombol-tambah');
+        this.hasil = document.querySelector('#hasil');
     }
 
     getInput() {
         return [this.operand1.value, this.operand2.value]
     }
-    getResult(angka1, angka2) {
-        hasil.innerText = angka1 + angka2;
+    setResult(angka1, angka2) {
+        this.hasil.innerText = angka1 + angka2;
     }
 
     onClick(cb) {

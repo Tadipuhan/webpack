@@ -1,16 +1,16 @@
 const tombolJokes = document.querySelector('#jokes-receh');
 const modalBody = document.querySelector('.modal-body');
 
-modul.exports = class JokesService {
+export class JokesService {
     constructor() {
         this.tombolJokes = document.querySelector('#jokes-receh');
-        this.modalBody = document.querySelector('.modal-Body');
+        this.modalBody = document.querySelector('.modal-body');
     }
     
     setModal(str) {
         this.modalBody.innerHTML = str;
     }
-    onclick(cb) {
+    onClick(cb) {
         this.tombolJokes.addEventListener('click', cb);
     }
 }

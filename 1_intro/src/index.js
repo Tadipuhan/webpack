@@ -1,7 +1,7 @@
-const run = require('./app/app');
-const AlertService = require('./app/alerts.service');
-const CalculatorService = require('./app/calculator.service')
-const JokesService = require('./app/jokes.service')
+import { run } from './app/app.js';
+import { AlertService } from './app/alerts.service.js';
+import { CalculatorService } from './app/calculator.service.js';
+import { JokesService } from './app/jokes.service.js';
 
 const alertService = new AlertService();
 const calculatorService = new CalculatorService();

@@ -1,6 +1,6 @@
-const cekInputValid = require('./utils/cekInputValid')
+import { cekInputValid } from './utils/cekInputValid.js'
 
-modul.exports = class AlertService {
+export class AlertService {
   constructor() {
     this.error = document.querySelector('#error')
   }
@@ -14,9 +14,9 @@ modul.exports = class AlertService {
       }
     }, 'Silahkan masukkan angka yang benar: ');
   
-    error.classList.remove('d-none');
-    error.innerText = hasil;
+    this.error.classList.remove('d-none');
+    this.error.innerText = hasil;
   };
   
-  sembunyikanError = () => error.classList.add('d-none');
+  sembunyikanError = () => this.error.classList.add('d-none');
 }
