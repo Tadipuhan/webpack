@@ -6,6 +6,6 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'output'), // __dirname, relative terhadap dokumen kita
-        filename: 'bundle.js'
+        filename: 'bundle.js',
     }
 }
