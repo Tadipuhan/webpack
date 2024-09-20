@@ -8,5 +8,3 @@ const calculatorService = new CalculatorService();
 const jokesService = new JokesService();
 
 run(alertService, calculatorService, jokesService);
-
-alert('Hello people!');
