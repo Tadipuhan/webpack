@@ -1,0 +1,12 @@
+{
+  "name": "3_customconfiguration",
+  "version": "1.0.0",
+  "private": "true",
+  "scripts": {
+    "build": "webpack -o ./output --output-filename bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
