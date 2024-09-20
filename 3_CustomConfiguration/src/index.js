@@ -9,4 +9,4 @@ const jokesService = new JokesService();
 
 run(alertService, calculatorService, jokesService);
 
-alert('Selamat datang people!');
+alert('Hello people!');
