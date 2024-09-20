@@ -3,10 +3,18 @@
   "version": "1.0.0",
   "private": "true",
   "scripts": {
-    "build": "webpack -o ./output --output-filename bundle.js"
+    "build": "webpack --config mywebpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tadipuhan/webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  }
 }
