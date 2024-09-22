@@ -14,22 +14,29 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/i, // ekstensi file yang akan di compile
-                use: ['style-loader','css-loader'],
-            },
-            {
                 test: /\.(?:js|mjs|cjs)$/,
                 exclude: /node_modules/,
                 use: {
-                loader: 'babel-loader',
-                options: {
-                    targets: "defaults",
-                    presets: [
-                        ['@babel/preset-env']
-                    ]
-                }
-                }
-            }
+                    loader: 'babel-loader',
+                    options: {
+                        targets: "defaults",
+                        presets: [
+                            ['@babel/preset-env']
+                        ]
+                    },
+                },
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    "style-loader",
+                    // Translates CSS into CommonJS
+                    "css-loader",
+                    // Compiles Sass to CSS
+                    "sass-loader",
+                ],
+            },
         ],
     },
 };

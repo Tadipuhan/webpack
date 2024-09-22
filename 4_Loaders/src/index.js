@@ -1,5 +1,5 @@
 // require('./style.css') // atau
-import css from './style.css';
+import css from './style.scss';
 import { run } from './app/app.js';
 import { AlertService } from './app/alerts.service.js';
 import { CalculatorService } from './app/calculator.service.js';
