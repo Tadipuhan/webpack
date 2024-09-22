@@ -1,3 +1,4 @@
+import * as bootstrap from 'bootstrap'
 // require('./style.css') // atau
 import css from './style.scss';
 import { run } from './app/app.js';
